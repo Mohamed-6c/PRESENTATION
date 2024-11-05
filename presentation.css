@@ -1,0 +1,149 @@
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: #c1c1c1;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le logo et les liens */
+    align-items: center; /* Centrer verticalement */
+    background-color: #333; /* Couleur de fond */
+    padding: 15px 20px; /* Espacement autour de la nav */
+}
+.logo img {
+    height: 5px; /* Ajustez la taille selon vos besoins */
+    width: 150px;  /* Définir la largeur souhaitée */
+    height: auto;  /* Maintenir le ratio d'aspect */
+}
+.logo {
+    color: white; /* Couleur du texte du logo */
+    font-size: 25px; /* Taille de police */
+    font-weight: bold; /* Gras */
+}
+
+.nav-links {
+    list-style: none; /* Enlever les puces de la liste */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de margin */
+    display: flex; /* Aligner les éléments en ligne */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Distance entre les liens */
+}
+
+.nav-links a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Enlever le soulignement */
+    font-size: 18px; /* Taille de police */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+.cmd_line{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-gap: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 10px;
+    }
+    
+    p{
+        padding: 10px;
+        border: 1px dotted black;
+        border-radius : 10px;
+        box-shadow: 5px 5px 12px rgb(0, 0, 0);
+    }
+    
+
+    table{
+        border: 2px solid black
+    }
+    
+    th, td{
+        border: 1px solid black;
+    }
+    
+    .plane{
+        width: 200px;
+        height: 150px;
+    }
+    
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .parent{
+        width: 100px;
+    }
+    
+    .parent > .direct-child{
+        background: red;
+        font-style: bold;
+        font-size: 1.5em;
+    }
+    
+    .parent > .descendant{
+        background: cyan;
+    }
+    
+    .title{
+        font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+    }
+    
+    /* FLEXBOX ET GRID */
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #583b3b;
+        padding: 10px;
+        height: 200px;
+    }
+    .flex-item {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+    }
+    .grow {
+        flex-grow: 1;
+    }
+    .shrink {
+        flex-shrink: 0;
+    }
+    .basis {
+        flex-basis: 100px;
+    }
+    
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        background-color: #b87f7f;
+        padding: 20px;
+    }
+    .grid-item {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .span-2 {
+        grid-column: span 2;
+    }
+    .span-3 {
+        grid-column: span 3;
+    }
